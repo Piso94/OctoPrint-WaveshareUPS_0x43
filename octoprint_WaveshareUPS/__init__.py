@@ -41,7 +41,7 @@ class WaveshareUPSPlugin(octoprint.plugin.StartupPlugin,
                 self._power = ina219.getPower_W()  # Power in W
 
                 # Calculate battery percentage
-                self._battery_percentage = (self._load_voltage - 6) / 2.4 * 100
+                self._battery_percentage = (6 - self._load_voltage) / 2.4 * 100
                 if self._battery_percentage > 100:
                     self._battery_percentage = 100
                 if self._battery_percentage < 0:

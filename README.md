@@ -2,7 +2,7 @@
 
 This plugin displays a battery or power plug icon in the navigation bar. Hovering over the icon will show the current battery percentage, power supply status, and the remaining estimated runtime.
 
-![image](assets/img/Screenshot_1.png)
+![image](assets/img/Screenshot_1.png) 
 ![image](assets/img/Screenshot_2.png)
 ## Setup
 

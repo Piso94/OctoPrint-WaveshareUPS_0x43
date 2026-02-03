@@ -2,7 +2,7 @@ import octoprint.plugin
 from .external.INA219 import INA219  # Import the INA219 class from the external directory
 import threading
 import time
-
+ 
 class WaveshareUPSPlugin(octoprint.plugin.StartupPlugin,
                          octoprint.plugin.TemplatePlugin,
                          octoprint.plugin.AssetPlugin,

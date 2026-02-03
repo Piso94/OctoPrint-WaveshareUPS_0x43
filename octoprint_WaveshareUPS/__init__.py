@@ -9,7 +9,7 @@ class WaveshareUPSPlugin(octoprint.plugin.StartupPlugin,
                          octoprint.plugin.SimpleApiPlugin):
 
     def __init__(self):
-        self._address = 0x42  # Address of the INA219 sensor
+        self._address = 0x43  # Address of the INA219 sensor
         self._battery_percentage = 0
         self._power_supply_status = "Unknown"
         self._remaining_runtime = 0

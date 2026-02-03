@@ -37,7 +37,7 @@ class WaveshareUPSPlugin(octoprint.plugin.StartupPlugin,
                 self._load_voltage = ina219.getBusVoltage_V()  # Voltage on V- (load side)
                 self._shunt_voltage = ina219.getShuntVoltage_mV() / 1000  # Voltage between V+ and V- across the shunt
                 self._psu_voltage = self._load_voltage + self._shunt_voltage
-                self._current = ina219.getCurrent_mA()  # Current in mA
+                self._current = -ina219.getCurrent_mA()  # Current in mA
                 self._power = ina219.getPower_W()  # Power in W
 
                 # Calculate battery percentage
